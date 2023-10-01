@@ -1,1 +1,0 @@
-# thiagocrtz.github.io
