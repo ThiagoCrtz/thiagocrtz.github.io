@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<title>Quiz Musical</title>
+	</head>
+	<style>
+			
+		body {
+			font-weight: bold;
+			font-family: Arial, sans-serif;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			background-color: #483D8B;
+		}
+
+		form {
+
+			border: 2px solid #333;
+			border-radius: 10px;
+			max-width: 600px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #836FFF;
+		}
+
+
+		ol {
+			list-style-type: decimal;
+			margin-left: 20px;
+			padding: 0;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		label {
+			font-weight: bold;
+		}
+
+		input[type="button"], input[type="reset"] {
+			background-color: #836FFF;
+			color: black;
+			padding: 10px 20px;
+			height: 40px;
+			
+		}
+
+		input:hover{
+			background-color: transparent
+		}
+
+	</style>
+ 	<body>
+			<nav class="navbar bg-dark navbar-dark navbar-expand-sm" >
+					<div class="container-fluid active">
+						<a href="../index2.html" class="home">
+							<img src="../img/casa.png" alt="">
+						</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#menuNavbar" ><span class="navbar-toggler-icon"></span></button>
+						<div class="collapse navbar-collapse" id="menuNavbar">
+							<div class="navbar-nav ms-auto">
+								
+								<div class="dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Números</a>
+									<ul class="dropdown-menu  dropdown-menu-end ">
+										<li><a href="números.html" class="dropdown-item">Números Simples</a></li>
+										<li><a href="numeroscomplexo.html" class="dropdown-item">Números Complexos</a></li>
+									</ul>
+								</div>
+								<div class="dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jogos</a>
+									<ul class="dropdown-menu  dropdown-menu-end ">
+										<li><a href="../img/adivinha img/jogo.html" class="dropdown-item">Adivinha imagem</a></li>
+										<li><a href="teste tibetano.html" class="dropdown-item">Teste tibetano</a></li>
+										<li><a href="quiz.html" class="dropdown-item">Quiz</a></li>
+									</ul>
+								</div>
+								<a href="../html/devs.html" class="nav-link">Desenvolvedores</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+ 	</body>
+	<script language="Javascript"> 
+
+       var pergunta=[];
+								pergunta[0] = "Quem são os criadores do álbum Sgt. Pepper's Lonely Hearts Club Band?";
+								pergunta[1] = "Qual é o nome do famoso cantor brasileiro Tim Maia?";
+								pergunta[2] = "Quem é a grande apresentadora e cantora brasileira conhecida como 'Rainha dos Baixinhos'?";
+								pergunta[3] = "Todos os integrantes dos Racionais?";
+								pergunta[4] = "O rapper Kyan é nascido em qual cidade?";
+								pergunta[5] = "Qual o cantor brasileiro conhecido pelo verso 'Tem amor que é pirata, tem amor que é tesouro'?";
+								pergunta[6] = "Qual o significado das siglas do famoso grupo brasileiro TSG?";
+								pergunta[7] = "O renomado trapper Derek é conhecido por qual álbum lançado em 2022?";
+								pergunta[8] = "Possui uma marca de roupas denominada 'Blockkstar'?";
+								pergunta[9] = "Essa música NÃO é do Chorão:";
+								pergunta[10] = "Popularmente conhecido como o cridor do Trap brasileiro?";
+								alert("Bem-vindo ao nosso super quiz da música!");
+								document.write('<form name="formQuizz" method="get"> ');	
+								
+								
+                                document.write( '<ol>');
+								document.write('<li>'+pergunta[0] +'</li>');
+								
+                                					
+                               
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Red Hot Chilli Peppers">Red Hot Chilli Peppers<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Metallica">Metallica <br />');								
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="The Beatles">The Beatles  <br />')
+								document.write('<INPUT TYPE="RADIO" NAME="r0" VALUE="Recayd Mob">Recayd Mob <P>	');
+								
+								document.write('<li>'+pergunta[1] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Fernando">Fernando<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Junior">Junior<br />');							
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Roberto">Roberto<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r1" VALUE="Sebastião">Sebastião <P>	');
+								
+									
+								document.write('<li>'+pergunta[2] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Xuxa">Xuxa<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Rita Lee">Rita Lee<br />');							
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Nara Leão">Nara Leão<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r2" VALUE="Alcione">Alcione  <P>	');
+								
+								document.write('<li>'+pergunta[3] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Mano Brown, Ice Blue, Mvk e Roberto Carlos">Mano Brown, Ice Blue, Mvk e Roberto Carlos<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="MC Daleste, Kaskão, Mvk e DJ Soneka">MC Daleste, Kaskão, Mvk e DJ Soneka<br />');							
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Mano Brown, Djonga, Edi Rock e Mvk">Mano Brown, Djonga, Edi Rock e Mvk<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r3" VALUE="Mano Brown, Ice Blue, Edi Rock e KL Jay">Mano Brown, Ice Blue, Edi Rock e KL Jay <P>	');
+								
+								document.write('<li>'+pergunta[4] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="São Paulo">São Paulo<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Santos">Santos<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Salvador">Salvador<br />');							
+								document.write('<INPUT TYPE="RADIO" NAME="r4" VALUE="Ribeirão Preto">Ribeirão Preto<P>	');
+								
+								document.write('<li>'+pergunta[5] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="Péricles">Péricles<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="Thiaguinho">Thiaguinho<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="Zeca Pagodinho">Zeca Pagodinho<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r5" VALUE="Ferrugem">Ferrugem<P>	');
+								
+								document.write('<li>'+pergunta[6] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Todos Somos Gueto">Todos Somos Gueto <br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Trilha Sonora do Gueto">Trilha Sonora do Gueto<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Tatiana Suarez Gonçalvez">Tatiana Suarez Gonçalvez<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r6" VALUE="Tatu Safado Ganancioso">Tatu Safado Ganancioso<P>	');
+						        
+	
+								document.write('<li>'+pergunta[7] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Calzone Tapes 2">Calzone Tapes 2<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Vida Cara">Vida Cara<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Trap The Fato">Trap The Fato<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r7" VALUE="Hora do Rush">Hora do Rush<P>');
+								
+								document.write('<li>'+pergunta[8] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="The Boy">The Boy<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="Jé Santiago">Jé Santiago<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="Victor">Victor<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r8" VALUE="MC Igu">MC Igu<P>	');
+								
+								document.write('<li>'+pergunta[9] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Zóio de lula">Zóio de lula<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Céu Azul">Céu Azul<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Só os loucos sabem">Só os loucos sabem<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r9" VALUE="Descobridor dos sete mares">Descobridor dos sete mares<P>	');
+								
+								document.write('<li>'+pergunta[10] +'</li>');	
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="Rudies Flacko">Rudies Flacko<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="Veigh">Veigh<br />');		
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="Raffa Moreira">Raffa Moreira<br />');
+								document.write('<INPUT TYPE="RADIO" NAME="r10" VALUE="Matuê">Matuê<P>');
+								document.write('</ol> ');
+								document.write('<input type="button" name="verifica" value="Ver resultados" onclick="respostas()">');
+								document.write('<input type="reset" name="limpar" value="Limpar respostas">');
+								document.write('</form> ');	
+								
+
+function respostas(){
+       
+       var acertos=0;
+
+       var resp0=document.formQuizz.r0.value;
+	   var resp1=document.formQuizz.r1.value;
+	   var resp2=document.formQuizz.r2.value;
+	   var resp3=document.formQuizz.r3.value;
+	   var resp4=document.formQuizz.r4.value;
+	   var resp5=document.formQuizz.r5.value;
+	   var resp6=document.formQuizz.r6.value;
+	   var resp7=document.formQuizz.r7.value;
+	   var resp8=document.formQuizz.r8.value;
+	   var resp9=document.formQuizz.r9.value;
+	   var resp10=document.formQuizz.r10.value;
+       var result="";
+	   var resposta=[];
+	    resposta[0] = "The Beatles";
+		resposta[1] = "Sebastião";
+		resposta[2] = "Xuxa";
+		resposta[3] = "Mano Brown, Ice Blue, Edi Rock e KL Jay";
+		resposta[4] = "Santos";
+		resposta[5] = "Ferrugem";
+		resposta[6] = "Trilha Sonora do Gueto";
+		resposta[7] = "Trap The Fato";
+		resposta[8] = "The Boy";
+		resposta[9] = "Descobridor dos sete mares";
+		resposta[10] = "Raffa Moreira";
+		
+		
+		
+		
+		
+	     if ((resp0=="")&& (resp1=="")&& (resp2=="")&& (resp3=="")&& (resp4=="") && (resp5=="")&& (resp6=="")&& (resp7=="")&& (resp8=="")&& (resp9=="")&& (resp10=="")) result="no";
+		if(result!= "no")
+		{
+		if(resp0 == resposta[0]) acertos=acertos+1;
+		if(resp1 == resposta[1]) acertos=acertos+1;
+		if(resp2 == resposta[2]) acertos=acertos+1;
+		if(resp3 == resposta[3]) acertos=acertos+1;
+		if(resp4 == resposta[4]) acertos=acertos+1;
+		if(resp5 == resposta[5]) acertos=acertos+1;
+		if(resp6 == resposta[6]) acertos=acertos+1;
+		if(resp7 == resposta[7]) acertos=acertos+1;
+		if(resp8 == resposta[8]) acertos=acertos+1;
+		if(resp9 == resposta[9]) acertos=acertos+1;
+	    if(resp10 == resposta[10]) acertos=acertos+1;
+		
+	
+		
+		
+		 
+		porcentagem=(acertos/11)*100;
+		alert('Total de acertos = '+acertos + ' com um total de ' + Math.round(porcentagem)+ '% '); 
+		if(Math.round(porcentagem)<=31) alert ('Você foi ruim demais haha, apenas ' + Math.round(porcentagem)+'% ');
+		else  if (Math.round(porcentagem)<50) alert ('Quase que você acerta metade, porém acertou apenas ' + Math.round(porcentagem)+'% ');
+		else  if (Math.round(porcentagem)<=69) alert ('Um desempenho regular, já que acertou ' + Math.round(porcentagem)+'% ');
+		else  if (Math.round(porcentagem)<=79) alert ('Até que foi bem, foi uma boa tentativa de ' + Math.round(porcentagem)+'% ');
+		else  if (Math.round(porcentagem)<=89) alert ('Quase que você atinge 90%, entretanto foi ' + Math.round(porcentagem)+'% ');
+		else  if (Math.round(porcentagem)<=95) alert ('Caramba! Você quase gabaritou com ' + Math.round(porcentagem)+'% ');
+		else  alert ('Uau!! Você acertou todas, se tornando um Gênio da Música, com ' + Math.round(porcentagem)+'% ');
+		  
+		
+		
+		 
+		} else alert("É necessário selecionar ao menos UMA alternativa!")
+		
+		
+		
+		  
+		
+		
+		
+
+                                            
+   }
+</script>
+</html>

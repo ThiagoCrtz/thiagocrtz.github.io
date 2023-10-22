@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <title>Questionário</title>
+
+</head>
+<style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+
+        h1 {
+            color: #333;
+            background-color: #6495ED;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        form {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        li {
+            list-style-type: decimal;
+            margin: 10px 0;
+        }
+
+
+        p {
+            font-weight: bold;
+        }
+
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+
+</style>
+<body>
+           <nav class="navbar bg-dark navbar-dark navbar-expand-sm" >
+                <div class="container-fluid active">
+                    <a href="../index2.html" class="home">
+                        <img src="../img/casa.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menuNavbar" ><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="menuNavbar">
+                        <div class="navbar-nav ms-auto">
+                            
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Números</a>
+                                <ul class="dropdown-menu  dropdown-menu-end ">
+                                    <li><a href="números.html" class="dropdown-item">Números Simples</a></li>
+                                    <li><a href="numeroscomplexo.html" class="dropdown-item">Números Complexos</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jogos</a>
+                                <ul class="dropdown-menu  dropdown-menu-end ">
+                                    <li><a href="../img/adivinha img/jogo.html" class="dropdown-item">Adivinha imagem</a></li>
+                                    <li><a href="teste tibetano.html" class="dropdown-item">Teste tibetano</a></li>
+                                    <li><a href="quiz.html" class="dropdown-item">Quiz</a></li>
+                                </ul>
+                            </div>
+                            <a href="../html/devs.html" class="nav-link">Desenvolvedores</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <h1>Teste tibetano</h1>
+            <form>
+                <ol>
+                <li>
+                <p>1 - Imagine que há cinco animais a sua frente: uma vaca, uma ovelha, um tigre, um cavalo e um porco. Coloque os animais na ordem que faz você se sentir feliz.</p>
+                <input type="text" name="ordem_animais" required>
+                </li>
+                <li>
+                <p>2 - Dê um adjetivo a cada substantivo nessa lista:</p>
+                <ul>
+                <li>O cão é <input type="text" name="adj_cao" required>.</li>
+                <li>O gato é <input type="text" name="adj_gato" required>.</li>
+                <li>O rato é <input type="text" name="adj_rato" required>.</li>
+                <li>O café é <input type="text" name="adj_cafe" required>.</li>
+                <li>O mar é <input type="text" name="adj_mar" required>.</li>
+                </ul>
+                </li>
+                <li>
+                <p>3 - Pense em 5 pessoas que são importantes em sua vida. Para cada uma das cinco pessoas, escolha uma cor na lista a seguir:</p>
+                <ol>
+                <li>Amarelo <input type="text" name="cor_pessoa1" required></li>
+                <li>Laranja <input type="text" name="cor_pessoa2" required></li>
+                <li>Vermelho <input type="text" name="cor_pessoa3" required></li>
+                <li>Branco <input type="text" name="cor_pessoa4"  required></li>
+                <li>Verde <input type="text" name="cor_pessoa5" required></li>
+                </ol>
+                </li>
+                </ol>
+                <a href="../html/tibetano2.html"><input type="button" value="Ver os resultados"></a>
+                <input type="reset" name="limpar" value="Limpar">
+                
+            </form>
+</body>
+</html>
